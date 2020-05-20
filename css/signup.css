@@ -1,0 +1,42 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.formDiv{
+	padding: 30px;
+	background-color: #2fc4b2;
+	position: absolute;
+	left:50%;
+	top:50%;
+    transform: translate(-50%,-50%);
+    border: 0.5px solid #ccc;
+    border-radius: 5% 5% 5% 5%;
+}
+
+input[type="text"],input[type="email"],input[type="date"],label{
+	display: block;
+	font-size: 20px;
+	margin:10px;	
+	margin-bottom: 10px;	
+	width: 100%;	
+	border:none;
+	outline: none;
+	padding: 5px;
+	margin-left: 50%;
+	transform: translate(-50%);
+}
+
+label{
+	color: white;	
+}
+input[type="submit"]{
+	margin-left: 50%;
+	transform: translate(-50%);
+	font-size: 20px;
+	background-color: black;
+	color:white;
+	outline: none;
+	border:none; 
+	padding: 5px;
+}
+
