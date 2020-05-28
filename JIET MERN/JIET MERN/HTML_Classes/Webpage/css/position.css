@@ -1,0 +1,78 @@
+/* Position:
+    static
+    relative
+    absolute
+    fixed
+    sticky
+*/
+
+#header{
+    position: fixed;    
+    display: block;
+    text-align: center;
+    z-index: 1; 
+    margin: 0 auto;
+}
+#header h1{
+    background: red;   
+}
+
+.banner{
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+    height: 20%;
+}
+.banner .welcome{
+    position: absolute;
+    margin: 10px 10px;
+    top: 45%;
+    left: 0px;
+    padding: 10px;
+    color: white;
+    background-color: goldenrod;
+    /* font-size: 75px; */
+}
+.banner h2{
+    font-size: 50px;
+}
+.banner p{
+    font-size: 1.5em;
+}
+
+nav{
+    max-width: 100%;
+    background: #ccc;
+    margin: 0px auto;
+    padding: 15px;
+    position: sticky;
+    top: 66px;
+}
+
+nav ul{
+    white-space: nowrap;
+}
+
+nav li{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+
+}
+
+/*Below are the only changes made to Sir's Files*/
+#contact-section{
+	text-align: center;
+	display: block;
+	margin-bottom: 0;
+}
+
+.methods{
+	display: flex;
+}
+.contact-method{
+	font-family: sans-serif;
+	flex:1;
+}

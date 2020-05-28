@@ -1,0 +1,328 @@
+/* h1{
+    color: rebeccapurple;
+    font-size: 40px;
+    text-transform: uppercase;
+ }   
+
+ p{
+    font-size: 20px;
+    color: rgb(100, 200, 90);
+ }
+
+ h2{
+     font-size: 30px;
+     color: #616062;
+     text-transform: uppercase;
+ }
+
+ a{
+     text-decoration: unset;
+     color: greenyellow;
+     font-size: 18px;
+ } */
+
+
+/* #div-one{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: ghostwhite;
+    text-decoration: underline;
+    font-size: 20px;
+    border: 3px solid red ;
+    text-align: justify;
+    background: rebeccapurple;
+} */
+
+/* #div-two{
+    background: greenyellow;
+    color: blue;
+} */
+
+/* div div ul{
+    text-decoration: underline;
+} */
+
+/* #div-one ul{
+    color: cyan;
+}
+
+#div-two ul{
+    color: magenta;
+}
+
+#inner-div ul{
+    color: goldenrod;
+} */
+
+/* div .list-items{
+    color: cyan;
+} */
+
+/* div ul li a {
+    text-decoration: unset;
+    cursor: pointer;
+    color: orchid;
+} */
+
+/* div{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: rebeccapurple;
+    color: white;
+} */
+
+/* #div-one #link-list a{
+    color: cyan;
+} */
+
+/* body{
+    background-image: url('../images/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: white;
+} */
+
+/* #div-two h2{
+    color: red !important;
+}
+
+#div-two h2{
+    color: gray;
+} */
+
+
+
+
+/* specificity */
+
+/* 3 points */
+/* div ul li{
+    color: red;
+    text-decoration: underline;
+    font-size: 25px;
+}  */
+
+/* 111 points */
+/* #inner-div .list-items li{
+    color: magenta;
+} */
+
+/* 102 points */
+/* #inner-div ul li{
+    color: green;
+    text-decoration: none;
+} */
+
+/* 
+   id = 100 point
+   class = 10 points
+   element = 1
+*/
+
+/* 100 + 1 + 10 + 1 = 112 */
+/* #outer-div div .list-items li{
+    color: black;
+} */
+
+/* 1 + 1 + 10 + 1 = 13 */
+/* div div .list-items li{
+    color: red;
+} */
+
+/* 100 + 100 + 1 + 1 = 202 */
+/* #outer-div #inner-div ul li{
+    color: green;
+} */
+
+/* 1 + 100 + 10 + 1 = 112 */
+/* div #inner-div .list-items li{
+    color: pink;
+} */
+
+/* 1 + 100 + 1 + 100 + 10 + 1 = 213 */
+/* div#outer-div div#inner-div .list-items li{
+    color: magenta;
+} */
+
+/* Targetting Multiple Elements */
+
+/* h1, div, p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
+
+/* Smilie emoji - 128516
+    <h3>&#128516;<h3>
+*/
+
+/* Child Selector combinator*/
+
+/* #div-one > p{
+    color: red;
+}
+
+body > p {
+    color: purple;
+} */
+
+/* div > p {
+    font-size: 30px;
+} */
+
+/* Adjacent Selector  */
+
+/* #div-two h2 + p{
+    color: green;
+}
+
+#articles h2 + p {
+    font-size: 25px;
+    color: maroon;
+} */
+
+/* h2 ~ p{
+    font-size: 10px;
+} */
+
+/* Attribute Selectors */
+
+/* span[class="para"]{
+    color: brown;
+}
+
+div[id = "div-one"]{
+    background: greenyellow;
+} 
+
+p[class]{
+    color: mediumseagreen;
+} */
+
+/* Pattern Matching CSS */
+
+ /* div[class ~= "welcome"]{
+    background: cyan;
+    font-size: 25px;
+}
+
+div.welcome {
+    background: peru;
+} */
+/*  
+.header{
+    font-size: 30px;
+}
+
+.welcome{
+    color: rgb(181, 125, 233);
+    font-size: 40px;
+}
+
+span[class ~= "class-one"]{
+    font-size: 20px;
+    color: brown;
+}
+
+a[href ^= "https"]{
+    text-decoration: none;
+    background: gray;
+    color: white;
+}
+
+a[href $= ".pdf"] {
+    text-decoration: none;
+    background: blueviolet;
+    color: white;
+} */
+
+/* Selector
+    1. elements
+    2. ids
+    3. class
+    4. heirarchy
+    5. sibling
+    6. adjacent
+    7. attribute
+    8. pattern matching
+    9. Specificity (Conflicts)
+    10. Multiple Elements
+*/
+
+/* #numbers h3 ~ p{
+    background: red;
+    color: white;
+} */
+
+
+/* Pseudo Classes in CSS */
+
+/* element:pseudoClass{
+    property: value
+ } 
+    Dynamic pseudo classes
+    1. hover
+    2. active
+    3. visited
+ */
+
+ /* a:hover{
+     background: powderblue;
+ }
+
+ p:hover{
+     color: palevioletred;
+ }
+
+ a:active{
+     color: orange;
+ }
+
+ a:visited{
+     color: red;
+ } */
+
+ /* Structural pseudo classes */
+
+/* div:first-child{
+     background: red;
+ } */
+
+/* article h3:first-child{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ article p:first-of-type{
+    background: blue
+}
+
+article p:last-of-type{
+    background: green;
+}
+
+ul li:first-child{
+    text-decoration: underline;
+} */
+
+/* nth child selector */
+
+/* li:nth-child(3){
+    color: red;
+    font-weight: 600;
+}
+
+li:nth-child(5){
+    background: gold;
+} */
+
+/* #articles p:nth-child(even){
+    background: blue;
+    color: white;
+}
+
+#articles p:nth-child(odd){
+    background: rebeccapurple;
+    color: white;
+} */
+
+/* #articles p:nth-child(3n +1){
+    background: rebeccapurple;
+    color: white;
+} */
